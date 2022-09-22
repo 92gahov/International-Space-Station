@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Space Station</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>International Space Station</h1>
+    </div>
+    <div class="sub-heading">
+        <p>The <a href="https://en.wikipedia.org/wiki/International_Space_Station" target="_blank">ISS</a> is moving at
+            close to 28,000 km/h so its location changes really fast! Where is it right now?</p>
+    </div>
+
+    <div class="map-container">
+        <div class="iss-div">
+            <img src="img/pngfind.com-space-station-png-859363.png" width="46px" height="46px">
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+        defer></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
